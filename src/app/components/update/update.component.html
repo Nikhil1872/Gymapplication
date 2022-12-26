@@ -1,0 +1,109 @@
+<div align="center">
+  <br />
+
+  <form #updateform="ngForm" (ngsubmit)="updatedata(updateform)">
+    <label class="input" for="Email">
+      <h3>
+        Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </h3></label
+    >&nbsp;&nbsp;
+    <input
+      type="text"
+      value=""
+      required
+      name="email"
+      id="email"
+      #email
+      (ngModule)="(email)"
+    />
+    <br />
+
+    <label class="input" for="Mobile"> <h3>Mobile No.:</h3></label>
+    &nbsp;&nbsp;
+
+    <input
+      type="number"
+      value=""
+      required
+      name="mno"
+      id="mno"
+      #mno
+      (ngModule)="(mno)"
+    />
+    <br />
+    <label name="" class="input" for="Name">
+      <h3>Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></label
+    >
+    &nbsp;&nbsp;
+
+    <input type="text" value="Enter Name" required />
+    <br />
+    <label class="input" for="Age"
+      ><h3>
+        Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </h3></label
+    >
+    <input type="number" required name="age" id="age" #age (ngModule)="(age)" />
+    <br />
+    <label class="input" for="gender"
+      ><h3>
+        Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </h3></label
+    >
+    <input
+      type="text"
+      name="gender"
+      id="gender"
+      #gender
+      (ngModule)="(gender)"
+    />
+
+    <br />
+    <label name="" class="input" for="Name">
+      <h3>Adhar No.:&nbsp;&nbsp;</h3></label
+    >
+    &nbsp;&nbsp;
+
+    <input
+      type="text"
+      id="adharno"
+      required
+      name="adharno"
+      #adharno
+      (ngModule)="(adharno)"
+    />
+    <br />
+    <label class="input" for="Name">
+      <h3>Password:&nbsp;&nbsp;&nbsp;&nbsp;</h3></label
+    >
+    &nbsp;
+
+    <input
+      type="password"
+      id="password"
+      name="password"
+      #password
+      (ngModule)="(password)"
+    />
+    <br />
+    <br />
+    <span style="color: red; font-weight: 500; font-size: 20px"></span>
+
+    <br />
+    <br />
+
+    <input
+      style="
+        border-radius: 10px;
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+      "
+      type="submit"
+      value="Update"
+    />
+    <br />
+  </form>
+</div>
