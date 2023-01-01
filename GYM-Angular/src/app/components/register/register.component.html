@@ -1,0 +1,106 @@
+<br />
+<pre></pre>
+<pre></pre>
+<div
+  class="col-md-6 offset-md-3 my-4 mt-5 justify-content-center container h-auto w-80"
+>
+  <h4 class="d-flex justify-content-center">Registration Form</h4>
+  <form
+    #insertform="ngForm"
+    class="container w-50"
+    (ngSubmit)="insertdata(insertform)"
+  >
+    <div class="form-group">
+      <label>Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        #email
+        (ngModel)="(email)"
+        name="email"
+      />
+    </div>
+    <pre></pre>
+
+    <div class="form-group">
+      <label>Mobile Number</label>
+      <input
+        type="number"
+        class="form-control"
+        id="mno"
+        #mno
+        (ngModel)="(mno)"
+        name="mno"
+      />
+    </div>
+    <pre></pre>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="uname"
+        #uname
+        (ngModel)="(uname)"
+        name="uname"
+      />
+    </div>
+    <pre></pre>
+
+    <div class="form-group">
+      <label>Age</label>
+      <input
+        type="number"
+        class="form-control"
+        id="age"
+        #age
+        (ngModel)="(age)"
+        name="age"
+      />
+    </div>
+    <pre></pre>
+
+    <div class="form-group">
+      <label>Gender</label>
+      <input
+        type="text"
+        class="form-control"
+        id="gender"
+        #gender
+        (ngModel)="(gender)"
+        name="gender"
+      />
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label>Aadhar </label>
+      <input
+        type="number"
+        class="form-control"
+        id="adharno"
+        #adharno
+        (ngModel)="(adharno)"
+        name="adharno"
+      />
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label>Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        #password
+        (ngModel)="(password)"
+        name="password"
+      />
+    </div>
+    <pre></pre>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<pre></pre>
+<pre></pre>

@@ -1,0 +1,27 @@
+<pre></pre>
+<br />
+<br />
+<div
+  class="col-md-6 offset-md-3 my-4 justify-content-center container h-auto w-50"
+>
+  <h4 class="d-flex justify-content-center">Delete Students</h4>
+  <form
+    #deleteform="ngForm"
+    class="container"
+    (ngSubmit)="deletedata(deleteform)"
+  >
+    <div class="form-group">
+      <label>Email</label>
+      <input
+        type="text"
+        class="form-control dis"
+        id="email"
+        #email
+        (ngModel)="(email)"
+        name="email"
+      />
+      <br />
+      <input type="submit" value="Delete" />
+    </div>
+  </form>
+</div>
